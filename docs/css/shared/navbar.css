@@ -12,7 +12,7 @@ nav {
     margin-bottom: 4em;
 }
 
-ul {
+.nav-list {
     width: 50%;
     display: flex;
     justify-content: space-around;

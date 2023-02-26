@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,17 @@
     <link rel="stylesheet" href="./css/shared/navbar.css">
     <link rel="stylesheet" href="./css/shared/underline.css">
     <link rel="stylesheet" href="./css/shared/footer.css">
+    <link rel="stylesheet" href="./css/downloads.css">
 
+    <script src="./scripts/manage_downloads.js" async></script>
+    <script src="./scripts/versions.js" async></script>
 
     <title>Downloads</title>
 </head>
-<body>
+
+<body onload="loadDownloads()">
     <nav>
-        <ul>
+        <ul class="nav-list">
             <a href="./index.html">
                 <li class="underline">Home</li>
             </a>
@@ -28,7 +33,27 @@
         </ul>
     </nav>
     <main>
+        <div class="downloads-container">
+            <div class="downloads-title">
+                <img src="./assets/download-solid.svg" alt="" width="20px" height="20px">
+                <h2>Downloads</h2>
+            </div>
+            <ul class="downloads-list" id="container">
+                <li class="downloads-item">
+                    <a href="">
+                        <div class="download-link">
+                            <p>v1.0.3</p>
+                        </div>
+                    </a>
+                    <span class="date">Uploaded: 2023/02/26</span>
 
+                </li>
+            </ul>
+        </div>
     </main>
+    <footer>
+        
+    </footer>
 </body>
+
 </html>

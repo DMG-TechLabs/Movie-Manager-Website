@@ -1,0 +1,36 @@
+body, main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.downloads-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10em;
+    margin-bottom: 2em;
+}
+
+.downloads-container {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary);
+    color: white;
+    padding: 2em;
+
+    
+}
+
+.downloads-item {
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+}
