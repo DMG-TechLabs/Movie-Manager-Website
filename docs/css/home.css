@@ -2,6 +2,7 @@
     font-family: "Michroma";
     src: url("../static/Michroma-Regular.ttf");
 }
+
 @font-face {
     font-family: "Amaranth";
     src: url("../static/Amaranth-Regular.ttf");
@@ -13,8 +14,16 @@ header {
     height: 100%;
     background-color: var(--primary);
     color: white;
+
     display: grid;
     place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title"
+        "latest-version"
+        "go-down";
 }
 
 .info,
@@ -25,18 +34,44 @@ header {
     padding: 4em;
 }
 
+
+
 .title {
+    grid-area: title;
+
     font-size: 8vw;
     font-family: "Amaranth";
 }
 
 .latest-version {
-    display: grid;
-    place-items: center;
+    grid-area: latest-version;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
     background-color: var(--secondary);
-    width: 15em;
+    width: 18em;
     aspect-ratio: 5/1;
     border-radius: 4.5em;
+}
+
+.go-down {
+    grid-area: go-down;
+
+    display: grid;
+    place-items: center;
+    width: 3em;
+    aspect-ratio: 1;
+    background-color: var(--secondary);
+    border-radius: 10% 10% 50% 50%;
+    overflow: none;
+}
+
+.go-down:hover {
+    scale: 110%;
+    animation: scale 0.4s ease-out;
 }
 
 a {
@@ -49,6 +84,12 @@ a {
     animation: scale 0.4s ease-out;
 }
 
+main div:nth-child(odd) {
+    background-color: var(--secondary);
+    color: white;
+    opacity: 0.9;
+}
+
 @keyframes scale {
     0% {
         scale: 100%;
@@ -59,8 +100,3 @@ a {
     }
 }
 
-main div:nth-child(odd) {
-    background-color: var(--secondary);
-    color: white;
-    opacity: 0.9;
-}

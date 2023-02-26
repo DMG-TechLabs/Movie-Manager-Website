@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/shared/navbar.css">
     <link rel="stylesheet" href="./css/shared/underline.css">
+    <link rel="stylesheet" href="./css/shared/footer.css">
+
     <title>Movie Manager</title>
 </head>
 
@@ -19,7 +21,12 @@
             Movie Manager
         </h1>
         <a href="./versions/" class="latest-link" download>
-            <div class="latest-version">Download Latest Version</div>
+
+            <div class="latest-version"><img src="./assets/download-solid.svg" alt="download" width="25px"
+                    height="25px">Download Latest Version</div>
+        </a>
+        <a href="#main" class="go-down">
+            <div class="go-down"><img src="./assets/angles-down-solid.svg" alt="down" width="30px" height="30px"></div>
         </a>
     </header>
 
@@ -37,7 +44,7 @@
                 </a>
             </ul>
         </nav>
-        <div class="info">
+        <div class="info" id="main">
             <h1>Info</h1>
             <section>
                 <h2>Section 1</h2>
