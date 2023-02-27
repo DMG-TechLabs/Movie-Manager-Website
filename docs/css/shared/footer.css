@@ -2,6 +2,10 @@ footer {
     width: 100vw;
     height: fit-content;
     background-color: rgb(20, 20, 20);
-    margin-top: 5em;
+    /*margin-top: 5em;*/
     padding: 4em;
+}
+
+.copyrights{
+    color: white;
 }
