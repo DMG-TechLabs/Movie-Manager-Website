@@ -13,6 +13,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: var(--primary);
+    background: var(--gradient);
     color: white;
 
     display: grid;
@@ -62,8 +63,8 @@ header {
     place-items: center;
     width: 3em;
     aspect-ratio: 1;
-    background-color: var(--secondary);
-    border-radius: 50% 50% 50% 50%;
+    background-color: var(--accent);
+    border-radius: 50%;
     overflow: none;
 }
 
@@ -101,4 +102,3 @@ main div:nth-child(odd) {
         scale: 110%;
     }
 }
-

@@ -1,7 +1,13 @@
-body, main {
+body,
+main {
     width: 100%;
     height: 100vh;
     background-color: var(--primary);
+}
+
+main {
+    display: grid;
+    place-items: center;
 }
 
 .downloads-title {
@@ -18,10 +24,10 @@ body, main {
     height: 100%;
 
     background-color: var(--primary);
+    background: var(--gradient);
     color: white;
     padding: 2em;
 
-    
 }
 
 .downloads-item {
@@ -33,4 +39,8 @@ body, main {
 
 a {
     color: white;
+}
+
+.date {
+    width: 10em;
 }

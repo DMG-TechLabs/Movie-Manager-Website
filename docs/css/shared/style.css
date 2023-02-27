@@ -1,9 +1,10 @@
 *{
     /*variables*/
-    --primary: #243763;
-    --secondary:#FF6E31;
-    --accent: green;
+    --primary: #16213E;
+    --secondary:#0F3460;
+    --accent: #E94560;
     --underline: white;
+    --gradient: linear-gradient(225deg, rgba(22,33,62,1) 0%, rgba(15,52,96,1) 45%, rgba(233,69,96,1) 100%);
 
     margin: 0;
     padding: 0;
