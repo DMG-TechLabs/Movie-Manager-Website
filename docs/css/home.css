@@ -83,7 +83,7 @@ a {
     animation: scale 0.4s ease-out;
 }
 
-main div:nth-child(odd) {
+main div:nth-child(even) {
     background-color: var(--secondary);
     color: white;
     opacity: 0.9;
