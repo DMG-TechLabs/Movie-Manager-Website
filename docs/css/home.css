@@ -102,3 +102,9 @@ main div:nth-child(even) {
         scale: 110%;
     }
 }
+
+@media screen and (max-device-width: 425px){
+    .nav-list a li span {
+        display: none;
+    }
+}

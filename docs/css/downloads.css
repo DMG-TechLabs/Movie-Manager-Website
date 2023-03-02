@@ -44,3 +44,9 @@ a {
 .date {
     width: 10em;
 }
+
+@media screen and (max-device-width: 425px){
+    .nav-list a li span {
+        display: none;
+    }
+}

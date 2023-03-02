@@ -56,3 +56,9 @@ form a{
     padding: 5px;
     border-radius: 15px;
 }
+
+@media screen and (max-device-width: 425px){
+    .nav-list a li span {
+        display: none;
+    }
+}
