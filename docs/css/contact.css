@@ -22,7 +22,7 @@ main {
 
 .contact-form input,
 textarea {
-    border-radius: 5px;
+    border-radius: 20px;;
     padding: 1em;
     border: 0px;
     resize: none;

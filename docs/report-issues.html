@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="./css/shared/underline.css">
     <link rel="stylesheet" href="./css/shared/footer.css">
     <script src="https://kit.fontawesome.com/3027224a98.js" crossorigin="anonymous"></script>
-    <title>Movie Manager</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+    <title>Report an Issue</title>
 </head>
 
 <body>
@@ -29,7 +33,26 @@
         </ul>
     </nav>
     <main>
-        
+        <form action="" class="form" id="form">
+            <h2 class="title" style="margin-bottom: 2em;">Report an Issue</h2>
+            <div class="input name"><sub style="color: var(--accent);">*</sub><input type="text" placeholder="Name" id="name" name="name"></div>
+            <div class="input email"><sub style="color: var(--accent);">*</sub><input type="email" placeholder="Email" id="email" name="email"></div>
+            <div class="input issue-title"><sub style="color: var(--accent);">*</sub><input type="text" placeholder="Issue title" id="title" name="title"></div>
+            <div class="input subject"><sub style="color: var(--accent);">*</sub>
+                <select name="subject" id="subject">
+                    <option value="-1">Select subject...</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="bug">Bug</option>
+                    <option value="question">Question</option>
+
+                </select>
+            </div>
+            <div class="input message"><sub style="color: var(--accent);">*</sub><textarea name="" id="message" cols="30" rows="10"
+                    placeholder="Type here..." id="message" name="message"></textarea></div>
+            <div class="input image">Screenshot: <input type="file" id="img" name="img" accept="image/*" value="Browse" id="image">
+            </div>
+            <div class="input submit"><input type="submit" value="Submit" onclick="sendIssue()"></div>
+        </form>
     </main>
     <footer>
         <div class="copyrights">
@@ -43,5 +66,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./scripts/send_issue.js" async></script>
 
 </html>
