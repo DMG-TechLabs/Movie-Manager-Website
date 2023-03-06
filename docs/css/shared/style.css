@@ -5,6 +5,7 @@
     --accent: #E94560;
     --underline: white;
     --gradient: linear-gradient(225deg, rgba(22,33,62,1) 0%, rgba(15,52,96,1) 45%, rgba(233,69,96,1) 100%);
+    --nav-height: 4em;
 
     margin: 0;
     padding: 0;
