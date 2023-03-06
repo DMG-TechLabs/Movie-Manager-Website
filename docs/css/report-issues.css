@@ -1,0 +1,5 @@
+main {
+    height: calc(100% - var(--nav-height));
+    width: 100%;
+    background: var(--gradient);
+}
