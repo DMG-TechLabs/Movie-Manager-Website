@@ -29,6 +29,10 @@ nav {
 
 /*Mobile*/
 @media (max-width: 600px) {
+    .nav-title {
+        display: none;
+    }
+
     ul {
         width: 80%;
     }
