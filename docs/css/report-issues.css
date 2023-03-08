@@ -10,32 +10,55 @@ main {
 .form {
     border-radius: 20px;
     color: white;
-    width: 60%;
+    width: 60vw;
     background-color: var(--primary);
     height: fit-content;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
-    gap: 0px 10px;
-    grid-template-areas:
-        "title title"
-        "name email"
-        "issue-title subject"
-        "message message"
-        "image image"
-        "submit submit";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
+        gap: 0px 10px;
+        grid-template-areas:
+            "title title"
+            "name email"
+            "issue-title subject"
+            "message message"
+            "image image"
+            "submit submit";
     padding: 2em;
 }
 
-.title { grid-area: title; }
-.name { grid-area: name; }
-.email { grid-area: email; }
-.issue-title { grid-area: issue-title; }
-.subject { grid-area: subject; }
-.message { grid-area: message; }
-.image { grid-area: image; }
-.submit { grid-area: submit; }
+.title {
+    grid-area: title;
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.issue-title {
+    grid-area: issue-title;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.image {
+    grid-area: image;
+}
+
+.submit {
+    grid-area: submit;
+}
 
 .input {
     display: block;
@@ -86,19 +109,52 @@ input[type="file"]:hover {
     border: 2px solid white;
 }
 
-select option:hover{
+select option:hover {
     background-color: var(--secondary);
     cursor: pointer;
 }
 
+input[type="file"] {
+    width: 100%;
+}
+
 @media (max-width: 600px) {
-    form {
-        width:90%;
+    .form {
+        width: 90vw;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
+        gap: 0px 10px;
+        grid-template-areas:
+            "title"
+            "name"
+            "email"
+            "issue-title"
+            "subject"
+            "message"
+            "image"
+            "submit";
     }
 }
 
-@media (min-width: 600px) and (max-width: 800px){
-    form {
-        width:80%;
+@media (min-width: 600px) and (max-width: 800px) {
+    .form {
+        width: 80vw;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "title"
+            "name"
+            "email"
+            "issue-title"
+            "subject"
+            "message"
+            "image"
+            "submit";
     }
+
 }
