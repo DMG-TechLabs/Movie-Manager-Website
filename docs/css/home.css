@@ -32,6 +32,11 @@ header {
         "go-down";
 }
 
+#logo {
+    display: block; 
+    margin-left: 35%;
+}
+
 .info,
 .tutorial,
 .about {
@@ -123,8 +128,30 @@ main div:nth-child(even) {
     }
 }
 
+@media screen and (max-device-width: 768px){
+    #logo {
+        margin-left: 25%;
+    }
+}
+
 @media screen and (max-device-width: 425px){
     .nav-list a li span {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 0;
+    }
+
+    #info_icon {
+        display: none;
+    }
+    
+    #tutorial_icon {
+        display: none;
+    }
+    
+    #about_icon {
         display: none;
     }
 }
