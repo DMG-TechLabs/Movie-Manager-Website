@@ -8,6 +8,11 @@
     src: url("../static/Amaranth-Regular.ttf");
 }
 
+@font-face {
+    font-family: "magic-school";
+    src: url("../static/magic-school.one.ttf");
+}
+
 
 header {
     width: 100vw;
@@ -53,8 +58,8 @@ header {
 .title {
     grid-area: title;
 
-    font-size: 8vw;
-    font-family: "Amaranth";
+    font-size: 10vw;
+    font-family: "magic-school";
 }
 
 .latest-version {
