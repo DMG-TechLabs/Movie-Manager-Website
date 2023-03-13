@@ -34,7 +34,8 @@ header {
 
 #logo {
     display: block; 
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info,
@@ -130,8 +131,8 @@ main div:nth-child(even) {
 }
 
 @media screen and (max-device-width: 768px){
-    #logo {
-        margin-left: 25%;
+    .title {
+        font-size: 13vw;
     }
 }
 
@@ -140,8 +141,8 @@ main div:nth-child(even) {
         display: none;
     }
 
-    #logo {
-        margin-left: 0;
+    .title {
+        font-size: 14vw;
     }
 
     #info_icon {
