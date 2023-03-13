@@ -15,21 +15,22 @@ main {
     height: fit-content;
 
     display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
-        gap: 0px 10px;
-        grid-template-areas:
-            "title title"
-            "name email"
-            "issue-title subject"
-            "message message"
-            "image image"
-            "submit submit";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr 0.5fr 0.2fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "title title"
+        "name email"
+        "issue-title subject"
+        "message message"
+        "image image"
+        "submit submit";
     padding: 2em;
 }
 
 .title {
     grid-area: title;
+    overflow: hidden;
 }
 
 .name {
