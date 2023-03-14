@@ -32,6 +32,12 @@ header {
         "go-down";
 }
 
+#logo {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .info,
 .tutorial,
 .about {
@@ -60,6 +66,7 @@ header {
 
     font-size: 10vw;
     font-family: "magic-school";
+    text-align: center;
 }
 
 .latest-version {
@@ -123,8 +130,30 @@ main div:nth-child(even) {
     }
 }
 
+@media screen and (max-device-width: 768px){
+    .title {
+        font-size: 13vw;
+    }
+}
+
 @media screen and (max-device-width: 425px){
     .nav-list a li span {
+        display: none;
+    }
+
+    .title {
+        font-size: 14vw;
+    }
+
+    #info_icon {
+        display: none;
+    }
+    
+    #tutorial_icon {
+        display: none;
+    }
+    
+    #about_icon {
         display: none;
     }
 }
