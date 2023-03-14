@@ -1,5 +1,5 @@
 main {
-    height: calc(100% - var(--nav-height));
+    height: min-content;
     width: 100%;
     background: var(--gradient);
     padding: 2em;

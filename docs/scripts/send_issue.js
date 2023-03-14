@@ -14,7 +14,7 @@ function getData() {
         title: title.value,
         subject: subject.value,
         message: message.value,
-        //image: image.value,
+        //image: image.value
     };
 
     console.log(obj);
@@ -64,7 +64,7 @@ function sendIssue() {
     //  Όταν πατηθεί το κουμπί της αποστολή τότε να εξαφανίζεται η φόρμα και στην θέση της να εμφανίζεται το μήνυμα "Το μήνυμα σας στάλθηκε με επιτυχία".
 
     //cleanAll();
-    alert("Message send successfully!");
+    alert("Message sent successfully!");
 }
 
 function clean(element_id){
