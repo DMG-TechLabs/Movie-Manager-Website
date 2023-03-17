@@ -97,7 +97,7 @@ select:focus,
 
 input[type="submit"],
 input[type="file"] {
-    background-color: var(--accent);
+    background-color: #381863;
     border: none;
     color: white;
     padding: 1em;
