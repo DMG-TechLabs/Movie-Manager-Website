@@ -1,4 +1,4 @@
-emailjs.init('zjUJ8G4LkrCOpFCOt');
+emailjs.init('CJLYrbbJ1uNcE_eKK');
 
 function check_message(message_element_name,message_error_element_name){
     message = document.getElementById(message_element_name);
@@ -42,7 +42,7 @@ function send(){
     // To πεδίο του μηνύματος να μην υπερβαίνει τους 100 χαρακτήρες. Όταν τους υπερβεί τότε να εμφανίζεται μήνυμα
     var ok_message = check_message("message","message_error");
     if(ok_email && ok_name && ok_message){
-        emailjs.sendForm('service_0bndrf9', 'template_lj0wiyu', document.getElementById("contact-form"))
+        emailjs.sendForm('service_xfrkbnh', 'template_swbfpow', document.getElementById("contact-form"))
                         .then(function() {
                             console.log('SUCCESS!');
                         }, function(error) {
