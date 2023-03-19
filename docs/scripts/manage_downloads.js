@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 const programName = "Movie-Manager";
+const noDownloads = document.getElementById("message");
 
 function createDownload(json) {
     let listItem = document.createElement("li");
@@ -35,6 +36,11 @@ function createDownload(json) {
 }
 
 function loadDownloads() {
+    if(versions.length == 0) {
+        container.style.display = "none";
+        noDownloads.style.display = "grid";
+    }
+
     for (let i = 0; i < versions.length; i++) {
         createDownload(versions[i]);
         console.log(versions[i]);

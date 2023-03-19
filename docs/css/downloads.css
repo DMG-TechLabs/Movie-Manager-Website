@@ -50,8 +50,8 @@ main {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.4fr 1fr;
+    gap: 10px 10px;
     grid-template-areas:
         "download-link date"
         "change-log change-log";
@@ -63,13 +63,36 @@ main {
 .date { grid-area: date; }
 .change-log { grid-area: change-log; }
 
+
+.download-link {
+    border-radius: 10px;
+    height: 100%;
+    background-color: var(--primary);
+
+    display: grid;
+    place-items: center;
+}
+
+.date {
+    display: grid;
+    place-items: center;
+    width: 10em;
+}
+
 a {
     color: white;
 }
 
-.date {
-    width: 10em;
+.no-downloads {
+    display: none;
+    place-items: center;
+    font-size: 5vw;
+    width: 100vw;
+    height: min-content
 }
+
+
+
 
 @media screen and (max-device-width: 425px) {
     .nav-list a li span {
