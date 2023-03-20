@@ -22,7 +22,7 @@ nav {
 
 /*Tablet*/
 @media (min-width: 600px) and (max-width: 800px) {
-    ul {
+    .nav-list {
         width: 60%;
     }
 }
@@ -33,7 +33,7 @@ nav {
         display: none;
     }
 
-    ul {
+    .nav-list {
         width: 80%;
     }
 }
