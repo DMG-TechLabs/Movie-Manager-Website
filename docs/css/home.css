@@ -120,12 +120,39 @@ main div:nth-child(even) {
     margin-top: 3%;
 }
 
-.margin-bottom-1{
-    margin-bottom: 1em;
+.margin-bottom{
+    margin-bottom: 0.5em;
 }
 
+.margin-bottom-1{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.step-1{
+    display: grid;
+    place-content: center;
+}
+
+.step-2{
+    display: grid;
+    place-content: center;
+}
+
+.step-3{
+    padding-right: 70%;
+}
+
+.margin-top{
+    margin-top: 1em;
+}
 .margin-top-1{
     margin-top: 1em;
+    text-align: center;
+}
+
+.margin-top-2{
+    margin-top: 3em;
 }
 
 @keyframes scale {
